@@ -1,0 +1,19 @@
+// Standard request to fine-tuned model
+// @link https://platform.openai.com/docs/guides/fine-tuning/use-a-fine-tuned-model
+POST https://api.openai.com/v1/chat/completions
+Authorization: Bearer {{key}}
+content-type: application/json
+
+{
+  "model": {fine_tuned_model_id},
+  "messages": [
+    {
+      "role": "system",
+      "content": "Given a tech support question, provide a one-line factual answer in terse corporate language."
+    },
+    {
+      "role": "user", 
+      "content": "How do I connect a new monitor?"
+    }
+  ]
+}

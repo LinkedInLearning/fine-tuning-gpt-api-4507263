@@ -1,0 +1,4 @@
+// Get list of fine-tuning jobs
+// @link https://platform.openai.com/docs/api-reference/fine-tuning/cancel
+GET https://api.openai.com/v1/fine_tuning/jobs/{fine_tuning_job_id}/cancel
+Authorization: Bearer {{key}}

@@ -1,0 +1,15 @@
+// Upload file for fine-tuning
+// @link https://platform.openai.com/docs/api-reference/files/create
+POST https://api.openai.com/v1/files
+Authorization: Bearer {{key}}
+Content-Type: multipart/form-data; boundary=----FieldBoundary
+
+------FieldBoundary
+Content-Disposition: form-data; name="purpose"
+
+fine-tune
+------FieldBoundary
+Content-Disposition: form-data; name="file"; filename="trainingData.jsonl"
+
+< ./trainingData.jsonl
+------FieldBoundary--

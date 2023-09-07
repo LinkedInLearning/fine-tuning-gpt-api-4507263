@@ -1,0 +1,12 @@
+// Create new fine-tuning job
+// @link https://platform.openai.com/docs/api-reference/fine-tuning/create
+POST https://api.openai.com/v1/fine_tuning/jobs
+Authorization: Bearer {{key}}
+content-type: application/json
+
+{
+  {
+    "training_file": "file-S4G59k9nGJNjmBCRm0k7fu3R",
+    "model": "gpt-3.5-turbo"
+  }
+}

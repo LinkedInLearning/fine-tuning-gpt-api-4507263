@@ -1,0 +1,4 @@
+// Get list of fine-tuning jobs
+// @link https://platform.openai.com/docs/api-reference/fine-tuning/undefined
+GET https://api.openai.com/v1/fine_tuning/jobs
+Authorization: Bearer {{key}}
