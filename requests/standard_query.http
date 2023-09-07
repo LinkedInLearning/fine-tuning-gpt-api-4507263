@@ -13,10 +13,5 @@ content-type: application/json
       "role": "user",
       "content": "How do I connect a new monitor?"
     }
-  ],
-  "temperature": 1,
-  "max_tokens": 256,
-  "top_p": 1,
-  "frequency_penalty": 0,
-  "presence_penalty": 0  
+  ]
 }
